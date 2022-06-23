@@ -3,7 +3,7 @@ import Config
 # Configure your database
 config :covid19, Covid19.Repo,
   username: System.get_env("DEV_DB_USER") || "postgres",
-  password: System.get_env("DEV_DB_PASS") || "",
+  password: System.get_env("DEV_DB_PASS") || "postgres",
   database: System.get_env("DEV_DB_NAME") || "covid19_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,

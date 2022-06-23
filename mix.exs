@@ -67,7 +67,8 @@ defmodule Covid19.MixProject do
       {:nebulex, "~> 2.2"},
       {:shards, "~> 1.0"},
       {:decorator, "~> 1.4"},
-      {:telemetry, "~> 1.0"}
+      {:telemetry, "~> 1.0"}#,
+      #{:file_system, "~> 0.2", only: [:dev, :test]}
     ]
   end
 
